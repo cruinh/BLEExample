@@ -15,14 +15,24 @@
 		AA53510D18A1FCE4005239EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53510C18A1FCE4005239EC /* AppDelegate.m */; };
 		AA53511018A1FCE4005239EC /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA53510E18A1FCE4005239EC /* Main_iPhone.storyboard */; };
 		AA53511318A1FCE4005239EC /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA53511118A1FCE4005239EC /* Main_iPad.storyboard */; };
-		AA53511618A1FCE4005239EC /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53511518A1FCE4005239EC /* FirstViewController.m */; };
-		AA53511918A1FCE4005239EC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53511818A1FCE4005239EC /* SecondViewController.m */; };
+		AA53511618A1FCE4005239EC /* CBCentralManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53511518A1FCE4005239EC /* CBCentralManagerViewController.m */; };
+		AA53511918A1FCE4005239EC /* CBPeripheralManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53511818A1FCE4005239EC /* CBPeripheralManagerViewController.m */; };
 		AA53511B18A1FCE4005239EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA53511A18A1FCE4005239EC /* Images.xcassets */; };
 		AA53512218A1FCE4005239EC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA53512118A1FCE4005239EC /* XCTest.framework */; };
 		AA53512318A1FCE4005239EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA5350FC18A1FCE4005239EC /* Foundation.framework */; };
 		AA53512418A1FCE4005239EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA53510018A1FCE4005239EC /* UIKit.framework */; };
 		AA53512C18A1FCE4005239EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA53512A18A1FCE4005239EC /* InfoPlist.strings */; };
 		AA53512E18A1FCE4005239EC /* BLEExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53512D18A1FCE4005239EC /* BLEExampleTests.m */; };
+		AA53513918A4A203005239EC /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53513818A4A203005239EC /* TabBarController.m */; };
+		AA53513B18A4B29E005239EC /* icon_512.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53513A18A4B29E005239EC /* icon_512.png */; };
+		AA53514018A4B31C005239EC /* icon_29.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53513C18A4B31C005239EC /* icon_29.png */; };
+		AA53514118A4B31C005239EC /* icon_40.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53513D18A4B31C005239EC /* icon_40.png */; };
+		AA53514218A4B31C005239EC /* icon_60.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53513E18A4B31C005239EC /* icon_60.png */; };
+		AA53514318A4B31C005239EC /* icon_76.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53513F18A4B31C005239EC /* icon_76.png */; };
+		AA53514718A4B39C005239EC /* icon_58.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53514418A4B39C005239EC /* icon_58.png */; };
+		AA53514818A4B39C005239EC /* icon_80.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53514518A4B39C005239EC /* icon_80.png */; };
+		AA53514918A4B39C005239EC /* icon_152.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53514618A4B39C005239EC /* icon_152.png */; };
+		AA53514B18A4B559005239EC /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = AA53514A18A4B559005239EC /* iTunesArtwork */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,16 +58,27 @@
 		AA53510C18A1FCE4005239EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AA53510F18A1FCE4005239EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		AA53511218A1FCE4005239EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		AA53511418A1FCE4005239EC /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		AA53511518A1FCE4005239EC /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		AA53511718A1FCE4005239EC /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		AA53511818A1FCE4005239EC /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		AA53511418A1FCE4005239EC /* CBCentralManagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBCentralManagerViewController.h; sourceTree = "<group>"; };
+		AA53511518A1FCE4005239EC /* CBCentralManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBCentralManagerViewController.m; sourceTree = "<group>"; };
+		AA53511718A1FCE4005239EC /* CBPeripheralManagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBPeripheralManagerViewController.h; sourceTree = "<group>"; };
+		AA53511818A1FCE4005239EC /* CBPeripheralManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBPeripheralManagerViewController.m; sourceTree = "<group>"; };
 		AA53511A18A1FCE4005239EC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AA53512018A1FCE4005239EC /* BLEExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA53512118A1FCE4005239EC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		AA53512918A1FCE4005239EC /* BLEExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BLEExampleTests-Info.plist"; sourceTree = "<group>"; };
 		AA53512B18A1FCE4005239EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AA53512D18A1FCE4005239EC /* BLEExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLEExampleTests.m; sourceTree = "<group>"; };
+		AA53513718A4A203005239EC /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		AA53513818A4A203005239EC /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		AA53513A18A4B29E005239EC /* icon_512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_512.png; sourceTree = "<group>"; };
+		AA53513C18A4B31C005239EC /* icon_29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_29.png; sourceTree = "<group>"; };
+		AA53513D18A4B31C005239EC /* icon_40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_40.png; sourceTree = "<group>"; };
+		AA53513E18A4B31C005239EC /* icon_60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_60.png; sourceTree = "<group>"; };
+		AA53513F18A4B31C005239EC /* icon_76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_76.png; sourceTree = "<group>"; };
+		AA53514418A4B39C005239EC /* icon_58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_58.png; sourceTree = "<group>"; };
+		AA53514518A4B39C005239EC /* icon_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_80.png; sourceTree = "<group>"; };
+		AA53514618A4B39C005239EC /* icon_152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_152.png; sourceTree = "<group>"; };
+		AA53514A18A4B559005239EC /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,10 +142,12 @@
 				AA53510C18A1FCE4005239EC /* AppDelegate.m */,
 				AA53510E18A1FCE4005239EC /* Main_iPhone.storyboard */,
 				AA53511118A1FCE4005239EC /* Main_iPad.storyboard */,
-				AA53511418A1FCE4005239EC /* FirstViewController.h */,
-				AA53511518A1FCE4005239EC /* FirstViewController.m */,
-				AA53511718A1FCE4005239EC /* SecondViewController.h */,
-				AA53511818A1FCE4005239EC /* SecondViewController.m */,
+				AA53511418A1FCE4005239EC /* CBCentralManagerViewController.h */,
+				AA53511518A1FCE4005239EC /* CBCentralManagerViewController.m */,
+				AA53511718A1FCE4005239EC /* CBPeripheralManagerViewController.h */,
+				AA53511818A1FCE4005239EC /* CBPeripheralManagerViewController.m */,
+				AA53513718A4A203005239EC /* TabBarController.h */,
+				AA53513818A4A203005239EC /* TabBarController.m */,
 				AA53511A18A1FCE4005239EC /* Images.xcassets */,
 				AA53510318A1FCE4005239EC /* Supporting Files */,
 			);
@@ -134,10 +157,19 @@
 		AA53510318A1FCE4005239EC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AA53514A18A4B559005239EC /* iTunesArtwork */,
 				AA53510418A1FCE4005239EC /* BLEExample-Info.plist */,
+				AA53510A18A1FCE4005239EC /* BLEExample-Prefix.pch */,
+				AA53514618A4B39C005239EC /* icon_152.png */,
+				AA53513C18A4B31C005239EC /* icon_29.png */,
+				AA53513D18A4B31C005239EC /* icon_40.png */,
+				AA53513A18A4B29E005239EC /* icon_512.png */,
+				AA53514418A4B39C005239EC /* icon_58.png */,
+				AA53513E18A4B31C005239EC /* icon_60.png */,
+				AA53513F18A4B31C005239EC /* icon_76.png */,
+				AA53514518A4B39C005239EC /* icon_80.png */,
 				AA53510518A1FCE4005239EC /* InfoPlist.strings */,
 				AA53510818A1FCE4005239EC /* main.m */,
-				AA53510A18A1FCE4005239EC /* BLEExample-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -236,8 +268,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA53514818A4B39C005239EC /* icon_80.png in Resources */,
 				AA53511318A1FCE4005239EC /* Main_iPad.storyboard in Resources */,
+				AA53514018A4B31C005239EC /* icon_29.png in Resources */,
+				AA53514118A4B31C005239EC /* icon_40.png in Resources */,
+				AA53513B18A4B29E005239EC /* icon_512.png in Resources */,
+				AA53514318A4B31C005239EC /* icon_76.png in Resources */,
+				AA53514218A4B31C005239EC /* icon_60.png in Resources */,
+				AA53514B18A4B559005239EC /* iTunesArtwork in Resources */,
+				AA53514918A4B39C005239EC /* icon_152.png in Resources */,
 				AA53511B18A1FCE4005239EC /* Images.xcassets in Resources */,
+				AA53514718A4B39C005239EC /* icon_58.png in Resources */,
 				AA53511018A1FCE4005239EC /* Main_iPhone.storyboard in Resources */,
 				AA53510718A1FCE4005239EC /* InfoPlist.strings in Resources */,
 			);
@@ -258,9 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA53511918A1FCE4005239EC /* SecondViewController.m in Sources */,
+				AA53511918A1FCE4005239EC /* CBPeripheralManagerViewController.m in Sources */,
 				AA53510D18A1FCE4005239EC /* AppDelegate.m in Sources */,
-				AA53511618A1FCE4005239EC /* FirstViewController.m in Sources */,
+				AA53513918A4A203005239EC /* TabBarController.m in Sources */,
+				AA53511618A1FCE4005239EC /* CBCentralManagerViewController.m in Sources */,
 				AA53510918A1FCE4005239EC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,6 +522,7 @@
 				AA53513318A1FCE4005239EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA53513418A1FCE4005239EC /* Build configuration list for PBXNativeTarget "BLEExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +531,7 @@
 				AA53513618A1FCE4005239EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

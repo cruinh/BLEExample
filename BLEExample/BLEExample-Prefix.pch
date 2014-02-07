@@ -14,3 +14,6 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+#define TEXT_SERVICE_UUID @"13D79C1E-B7D4-4704-930A-676362BA9EE6"
+#define TEXT_SERVICE_CHARACTERISTIC_UUID @"7F71038C-6145-479A-AA95-C4D8DB3ECADB"
