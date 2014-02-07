@@ -24,7 +24,6 @@
 		AA53512C18A1FCE4005239EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA53512A18A1FCE4005239EC /* InfoPlist.strings */; };
 		AA53512E18A1FCE4005239EC /* BLEExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53512D18A1FCE4005239EC /* BLEExampleTests.m */; };
 		AA53513918A4A203005239EC /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53513818A4A203005239EC /* TabBarController.m */; };
-		AA53513B18A4B29E005239EC /* icon_512.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53513A18A4B29E005239EC /* icon_512.png */; };
 		AA53514018A4B31C005239EC /* icon_29.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53513C18A4B31C005239EC /* icon_29.png */; };
 		AA53514118A4B31C005239EC /* icon_40.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53513D18A4B31C005239EC /* icon_40.png */; };
 		AA53514218A4B31C005239EC /* icon_60.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53513E18A4B31C005239EC /* icon_60.png */; };
@@ -70,7 +69,6 @@
 		AA53512D18A1FCE4005239EC /* BLEExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLEExampleTests.m; sourceTree = "<group>"; };
 		AA53513718A4A203005239EC /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		AA53513818A4A203005239EC /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
-		AA53513A18A4B29E005239EC /* icon_512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_512.png; sourceTree = "<group>"; };
 		AA53513C18A4B31C005239EC /* icon_29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_29.png; sourceTree = "<group>"; };
 		AA53513D18A4B31C005239EC /* icon_40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_40.png; sourceTree = "<group>"; };
 		AA53513E18A4B31C005239EC /* icon_60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_60.png; sourceTree = "<group>"; };
@@ -79,6 +77,8 @@
 		AA53514518A4B39C005239EC /* icon_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_80.png; sourceTree = "<group>"; };
 		AA53514618A4B39C005239EC /* icon_152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_152.png; sourceTree = "<group>"; };
 		AA53514A18A4B559005239EC /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		AA53515018A4C038005239EC /* PeripheralManager_Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PeripheralManager_Screenshot.png; sourceTree = "<group>"; };
+		AA53515118A4C038005239EC /* CentralManager_Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CentralManager_Screenshot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,13 +157,14 @@
 		AA53510318A1FCE4005239EC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AA53515018A4C038005239EC /* PeripheralManager_Screenshot.png */,
+				AA53515118A4C038005239EC /* CentralManager_Screenshot.png */,
 				AA53514A18A4B559005239EC /* iTunesArtwork */,
 				AA53510418A1FCE4005239EC /* BLEExample-Info.plist */,
 				AA53510A18A1FCE4005239EC /* BLEExample-Prefix.pch */,
 				AA53514618A4B39C005239EC /* icon_152.png */,
 				AA53513C18A4B31C005239EC /* icon_29.png */,
 				AA53513D18A4B31C005239EC /* icon_40.png */,
-				AA53513A18A4B29E005239EC /* icon_512.png */,
 				AA53514418A4B39C005239EC /* icon_58.png */,
 				AA53513E18A4B31C005239EC /* icon_60.png */,
 				AA53513F18A4B31C005239EC /* icon_76.png */,
@@ -272,7 +273,6 @@
 				AA53511318A1FCE4005239EC /* Main_iPad.storyboard in Resources */,
 				AA53514018A4B31C005239EC /* icon_29.png in Resources */,
 				AA53514118A4B31C005239EC /* icon_40.png in Resources */,
-				AA53513B18A4B29E005239EC /* icon_512.png in Resources */,
 				AA53514318A4B31C005239EC /* icon_76.png in Resources */,
 				AA53514218A4B31C005239EC /* icon_60.png in Resources */,
 				AA53514B18A4B559005239EC /* iTunesArtwork in Resources */,
