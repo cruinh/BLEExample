@@ -12,6 +12,8 @@
 @property(strong, nonatomic) NSMutableData *data;
 @property(assign, nonatomic) BOOL isCentralManagerScanning;
 
+@property(strong, nonatomic) dispatch_queue_t managerQueue;
+
 @end
 
 @implementation CBCentralViewModel
@@ -22,7 +24,9 @@
     if (self)
     {
         self.delegate = delegate;
-        self.centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
+
+        self.managerQueue = dispatch_queue_create("CBCentralManagerViewModelQueue",DISPATCH_QUEUE_CONCURRENT);
+        self.centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:self.managerQueue];
         self.discoveredPeripherals = [NSMutableArray new];
         self.data = [NSMutableData new];
     }
@@ -31,25 +35,29 @@
 
 - (void)startScanning
 {
-    if (self.centralManager.state == CBCentralManagerStatePoweredOn)
-    {
-        [self.centralManager scanForPeripheralsWithServices:@[[self _serviceUUID]]
-                                                    options:@{CBCentralManagerScanOptionAllowDuplicatesKey : @YES}];
-        self.isCentralManagerScanning = YES;
+    dispatch_async(self.managerQueue,^{
+        if (self.centralManager.state == CBCentralManagerStatePoweredOn)
+        {
+            [self.centralManager scanForPeripheralsWithServices:@[[self _serviceUUID]]
+                                                        options:@{CBCentralManagerScanOptionAllowDuplicatesKey : @YES}];
+            self.isCentralManagerScanning = YES;
 
-        [self _addToDisplayLog:@"Scanning started"];
-    }
+            [self _addToDisplayLog:@"Scanning started"];
+        }
+    });
 }
 
 - (void)stopScanning
 {
-    if (self.isCentralManagerScanning)
-    {
-        [self.centralManager stopScan];
-        self.isCentralManagerScanning = NO;
+    dispatch_async(self.managerQueue,^{
+        if (self.isCentralManagerScanning)
+        {
+            [self.centralManager stopScan];
+            self.isCentralManagerScanning = NO;
 
-        [self _addToDisplayLog:@"Scanning stopped"];
-    }
+            [self _addToDisplayLog:@"Scanning stopped"];
+        }
+    });
 }
 
 #pragma mark - CBCentralManagerDelegate methods
@@ -89,10 +97,10 @@
      advertisementData:(NSDictionary *)advertisementData
                   RSSI:(NSNumber *)RSSI
 {
-    [self _addToDisplayLog:[NSString stringWithFormat:@"Discovered Peripheral : %@ (RSSI: %@)", peripheral, RSSI]];
-
     if (![self.discoveredPeripherals containsObject:peripheral])
     {
+        [self _addToDisplayLog:[NSString stringWithFormat:@"Discovered New Peripheral : %@ (RSSI: %@)", peripheral, RSSI]];
+
         // Save a local copy of the peripheral, so CoreBluetooth doesn't get rid of it
         [self.discoveredPeripherals addObject:peripheral];
 

@@ -25,18 +25,18 @@
     self.viewModel = [[CBPeripheralViewModel alloc] initWithDelegate:self];
 }
 
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-
-    [self _startListeningForNotifications];
-
-    [self.viewModel stopAdvertising];
-}
-
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+
+    [self _startListeningForNotifications];
+
+    [self.viewModel startAdvertising];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
 
     [self _stopListeningForNotifications];
 
@@ -66,7 +66,10 @@
     if (text)
     {
         NSString *newText = [NSString stringWithFormat:@"%@\n",text];
-        self.logTextView.text = [self.logTextView.text stringByAppendingString:newText];
+
+        dispatch_async(dispatch_get_main_queue(), ^() {
+            self.logTextView.text = [self.logTextView.text stringByAppendingString:newText];
+        });
     }
 }
 
@@ -88,7 +91,7 @@
 
 - (void)textViewDidChange:(UITextView *)textView
 {
-    [self.viewModel updateDataToSend:[self.logTextView.text dataUsingEncoding:NSUTF8StringEncoding]];
+    [self.viewModel updateDataToSend:[textView.text dataUsingEncoding:NSUTF8StringEncoding]];
 }
 
 @end

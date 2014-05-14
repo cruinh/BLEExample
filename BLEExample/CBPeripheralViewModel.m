@@ -30,7 +30,8 @@
     if (self)
     {
         self.delegate = delegate;
-        self.peripheralManager = [[CBPeripheralManager alloc] initWithDelegate:self queue:nil];
+        dispatch_queue_t peripheralManagerQueue = dispatch_queue_create("CBPeripheralManagerViewModelQueue",DISPATCH_QUEUE_CONCURRENT);
+        self.peripheralManager = [[CBPeripheralManager alloc] initWithDelegate:self queue:peripheralManagerQueue];
     }
     return self;
 }

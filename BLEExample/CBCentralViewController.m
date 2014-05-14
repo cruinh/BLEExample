@@ -27,18 +27,18 @@
     self.viewModel = [[CBCentralViewModel alloc] initWithDelegate:self];
 }
 
-- (void)viewWillDisappear:(BOOL)animated
+- (void)viewWillAppear:(BOOL)animated
 {
-    [super viewWillDisappear:animated];
+    [super viewWillAppear:animated];
 
     [self _startListeningForNotifications];
 
     [self.viewModel startScanning];
 }
 
-- (void)viewWillAppear:(BOOL)animated
+- (void)viewWillDisappear:(BOOL)animated
 {
-    [super viewWillAppear:animated];
+    [super viewWillDisappear:animated];
 
     [self _stopListeningForNotifications];
 
@@ -49,8 +49,10 @@
 
 - (void)viewModelReceivedData:(NSData*)data
 {
-    [self.communicationTextView setText:[[NSString alloc] initWithData:data
-                                                              encoding:NSUTF8StringEncoding]];
+    dispatch_async(dispatch_get_main_queue(), ^() {
+        [self.communicationTextView setText:[[NSString alloc] initWithData:data
+                                                                  encoding:NSUTF8StringEncoding]];
+    });
 }
 
 #pragma mark - Notifications
@@ -73,6 +75,9 @@
 - (void)_onViewModelLogOutput:(NSString*)text
 {
     NSLog(@"%@",text);
-    self.logTextView.text = [self.logTextView.text stringByAppendingString:[NSString stringWithFormat:@"%@\n",text]];
+    dispatch_async(dispatch_get_main_queue(), ^() {
+        self.logTextView.text = [self.logTextView.text stringByAppendingString:[NSString stringWithFormat:@"%@\n",text]];
+        [self.logTextView setNeedsDisplay];
+    });
 }
 @end
