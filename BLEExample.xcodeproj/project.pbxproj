@@ -33,6 +33,7 @@
 		AA53514918A4B39C005239EC /* icon_152.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53514618A4B39C005239EC /* icon_152.png */; };
 		AA53514B18A4B559005239EC /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = AA53514A18A4B559005239EC /* iTunesArtwork */; };
 		AF6D0ACE729B3DDEE5C66B24 /* CBPeripheralViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6D07F0BBC18B6741300627 /* CBPeripheralViewModel.m */; };
+		AF6D0F393677341349E8D87E /* CBCentralViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6D0EF811DE829752E03E0D /* CBCentralViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,8 +81,10 @@
 		AA53514A18A4B559005239EC /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		AA53515018A4C038005239EC /* PeripheralManager_Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PeripheralManager_Screenshot.png; sourceTree = "<group>"; };
 		AA53515118A4C038005239EC /* CentralManager_Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CentralManager_Screenshot.png; sourceTree = "<group>"; };
+		AF6D0027C5B5B38B69654727 /* CBCentralViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCentralViewModel.h; sourceTree = "<group>"; };
 		AF6D0123FFE0239343FB99CD /* CBPeripheralViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBPeripheralViewModel.h; sourceTree = "<group>"; };
 		AF6D07F0BBC18B6741300627 /* CBPeripheralViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBPeripheralViewModel.m; sourceTree = "<group>"; };
+		AF6D0EF811DE829752E03E0D /* CBCentralViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCentralViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,8 @@
 				AA53510318A1FCE4005239EC /* Supporting Files */,
 				AF6D07F0BBC18B6741300627 /* CBPeripheralViewModel.m */,
 				AF6D0123FFE0239343FB99CD /* CBPeripheralViewModel.h */,
+				AF6D0EF811DE829752E03E0D /* CBCentralViewModel.m */,
+				AF6D0027C5B5B38B69654727 /* CBCentralViewModel.h */,
 			);
 			path = BLEExample;
 			sourceTree = "<group>";
@@ -310,6 +315,7 @@
 				AA53511618A1FCE4005239EC /* CBCentralViewController.m in Sources */,
 				AA53510918A1FCE4005239EC /* main.m in Sources */,
 				AF6D0ACE729B3DDEE5C66B24 /* CBPeripheralViewModel.m in Sources */,
+				AF6D0F393677341349E8D87E /* CBCentralViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

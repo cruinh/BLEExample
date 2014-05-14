@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Matthew Hayes. All rights reserved.
 //
 
-#import <CoreBluetooth/CoreBluetooth.h>
+#import "CBCentralViewModel.h"
 
-@interface CBCentralViewController : UIViewController<CBCentralManagerDelegate, CBPeripheralDelegate>
+@interface CBCentralViewController : UIViewController <CBManagerViewModelDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextView *communicationTextView;
 @property (strong, nonatomic) IBOutlet UITextView *logTextView;
