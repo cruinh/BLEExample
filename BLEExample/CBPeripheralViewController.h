@@ -1,5 +1,5 @@
 //
-//  CBCentralManagerViewController.h
+//  CBPeripheralViewController.h
 //  BLEExample
 //
 //  Created by cruinh on 2/4/14.
@@ -7,10 +7,12 @@
 //
 
 #import <CoreBluetooth/CoreBluetooth.h>
+#import "CBPeripheralViewModel.h"
 
-@interface CBCentralManagerViewController : UIViewController<CBCentralManagerDelegate, CBPeripheralDelegate>
+@interface CBPeripheralViewController : UIViewController<CBPeripheralViewModelDelegate,UITextViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextView *communicationTextView;
 @property (strong, nonatomic) IBOutlet UITextView *logTextView;
+@property (strong, nonatomic) IBOutlet UIButton *backgroundButton;
 
 @end

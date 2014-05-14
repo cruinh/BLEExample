@@ -15,8 +15,8 @@
 		AA53510D18A1FCE4005239EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53510C18A1FCE4005239EC /* AppDelegate.m */; };
 		AA53511018A1FCE4005239EC /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA53510E18A1FCE4005239EC /* Main_iPhone.storyboard */; };
 		AA53511318A1FCE4005239EC /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA53511118A1FCE4005239EC /* Main_iPad.storyboard */; };
-		AA53511618A1FCE4005239EC /* CBCentralManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53511518A1FCE4005239EC /* CBCentralManagerViewController.m */; };
-		AA53511918A1FCE4005239EC /* CBPeripheralManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53511818A1FCE4005239EC /* CBPeripheralManagerViewController.m */; };
+		AA53511618A1FCE4005239EC /* CBCentralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53511518A1FCE4005239EC /* CBCentralViewController.m */; };
+		AA53511918A1FCE4005239EC /* CBPeripheralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53511818A1FCE4005239EC /* CBPeripheralViewController.m */; };
 		AA53511B18A1FCE4005239EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA53511A18A1FCE4005239EC /* Images.xcassets */; };
 		AA53512218A1FCE4005239EC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA53512118A1FCE4005239EC /* XCTest.framework */; };
 		AA53512318A1FCE4005239EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA5350FC18A1FCE4005239EC /* Foundation.framework */; };
@@ -32,6 +32,7 @@
 		AA53514818A4B39C005239EC /* icon_80.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53514518A4B39C005239EC /* icon_80.png */; };
 		AA53514918A4B39C005239EC /* icon_152.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53514618A4B39C005239EC /* icon_152.png */; };
 		AA53514B18A4B559005239EC /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = AA53514A18A4B559005239EC /* iTunesArtwork */; };
+		AF6D0ACE729B3DDEE5C66B24 /* CBPeripheralViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6D07F0BBC18B6741300627 /* CBPeripheralViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,10 +58,10 @@
 		AA53510C18A1FCE4005239EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AA53510F18A1FCE4005239EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		AA53511218A1FCE4005239EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		AA53511418A1FCE4005239EC /* CBCentralManagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBCentralManagerViewController.h; sourceTree = "<group>"; };
-		AA53511518A1FCE4005239EC /* CBCentralManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBCentralManagerViewController.m; sourceTree = "<group>"; };
-		AA53511718A1FCE4005239EC /* CBPeripheralManagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBPeripheralManagerViewController.h; sourceTree = "<group>"; };
-		AA53511818A1FCE4005239EC /* CBPeripheralManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBPeripheralManagerViewController.m; sourceTree = "<group>"; };
+		AA53511418A1FCE4005239EC /* CBCentralViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBCentralViewController.h; sourceTree = "<group>"; };
+		AA53511518A1FCE4005239EC /* CBCentralViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBCentralViewController.m; sourceTree = "<group>"; };
+		AA53511718A1FCE4005239EC /* CBPeripheralViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBPeripheralViewController.h; sourceTree = "<group>"; };
+		AA53511818A1FCE4005239EC /* CBPeripheralViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBPeripheralViewController.m; sourceTree = "<group>"; };
 		AA53511A18A1FCE4005239EC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AA53512018A1FCE4005239EC /* BLEExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA53512118A1FCE4005239EC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -79,6 +80,8 @@
 		AA53514A18A4B559005239EC /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		AA53515018A4C038005239EC /* PeripheralManager_Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PeripheralManager_Screenshot.png; sourceTree = "<group>"; };
 		AA53515118A4C038005239EC /* CentralManager_Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CentralManager_Screenshot.png; sourceTree = "<group>"; };
+		AF6D0123FFE0239343FB99CD /* CBPeripheralViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBPeripheralViewModel.h; sourceTree = "<group>"; };
+		AF6D07F0BBC18B6741300627 /* CBPeripheralViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBPeripheralViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,14 +145,16 @@
 				AA53510C18A1FCE4005239EC /* AppDelegate.m */,
 				AA53510E18A1FCE4005239EC /* Main_iPhone.storyboard */,
 				AA53511118A1FCE4005239EC /* Main_iPad.storyboard */,
-				AA53511418A1FCE4005239EC /* CBCentralManagerViewController.h */,
-				AA53511518A1FCE4005239EC /* CBCentralManagerViewController.m */,
-				AA53511718A1FCE4005239EC /* CBPeripheralManagerViewController.h */,
-				AA53511818A1FCE4005239EC /* CBPeripheralManagerViewController.m */,
+				AA53511418A1FCE4005239EC /* CBCentralViewController.h */,
+				AA53511518A1FCE4005239EC /* CBCentralViewController.m */,
+				AA53511718A1FCE4005239EC /* CBPeripheralViewController.h */,
+				AA53511818A1FCE4005239EC /* CBPeripheralViewController.m */,
 				AA53513718A4A203005239EC /* TabBarController.h */,
 				AA53513818A4A203005239EC /* TabBarController.m */,
 				AA53511A18A1FCE4005239EC /* Images.xcassets */,
 				AA53510318A1FCE4005239EC /* Supporting Files */,
+				AF6D07F0BBC18B6741300627 /* CBPeripheralViewModel.m */,
+				AF6D0123FFE0239343FB99CD /* CBPeripheralViewModel.h */,
 			);
 			path = BLEExample;
 			sourceTree = "<group>";
@@ -299,11 +304,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA53511918A1FCE4005239EC /* CBPeripheralManagerViewController.m in Sources */,
+				AA53511918A1FCE4005239EC /* CBPeripheralViewController.m in Sources */,
 				AA53510D18A1FCE4005239EC /* AppDelegate.m in Sources */,
 				AA53513918A4A203005239EC /* TabBarController.m in Sources */,
-				AA53511618A1FCE4005239EC /* CBCentralManagerViewController.m in Sources */,
+				AA53511618A1FCE4005239EC /* CBCentralViewController.m in Sources */,
 				AA53510918A1FCE4005239EC /* main.m in Sources */,
+				AF6D0ACE729B3DDEE5C66B24 /* CBPeripheralViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

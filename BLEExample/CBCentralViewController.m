@@ -1,14 +1,14 @@
 //
-//  CBCentralManagerViewController.m
+//  CBCentralViewController.m
 //  BLEExample
 //
 //  Created by cruinh on 2/4/14.
 //  Copyright (c) 2014 Matthew Hayes. All rights reserved.
 //
 
-#import "CBCentralManagerViewController.h"
+#import "CBCentralViewController.h"
 
-@interface CBCentralManagerViewController ()
+@interface CBCentralViewController ()
 
 @property(strong, nonatomic) CBCentralManager *centralManager;
 @property(strong, nonatomic) NSMutableArray *discoveredPeripherals;
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation CBCentralManagerViewController
+@implementation CBCentralViewController
 
 #pragma mark - View Lifecycle
 
@@ -56,27 +56,27 @@
     switch (central.state)
     {
         case CBCentralManagerStatePoweredOff:
-            [self addToDisplayLog:@"new Central Manager State: CBCentralManagerStatePoweredOff"];
+            [self _addToDisplayLog:@"new Central Manager State: CBCentralManagerStatePoweredOff"];
             self.isCentralManagerScanning = NO;
             break;
         case CBCentralManagerStatePoweredOn:
 
-            [self addToDisplayLog:@"new Central Manager State: CBCentralManagerStatePoweredOn"];
+            [self _addToDisplayLog:@"new Central Manager State: CBCentralManagerStatePoweredOn"];
             [self _startScanning];
 
             break;
         case CBCentralManagerStateResetting:
-            [self addToDisplayLog:@"new Central Manager State: CBCentralManagerStateResetting"];
+            [self _addToDisplayLog:@"new Central Manager State: CBCentralManagerStateResetting"];
             break;
         case CBCentralManagerStateUnauthorized:
-            [self addToDisplayLog:@"new Central Manager State: CBCentralManagerStateUnauthorized"];
+            [self _addToDisplayLog:@"new Central Manager State: CBCentralManagerStateUnauthorized"];
             break;
         case CBCentralManagerStateUnsupported:
-            [self addToDisplayLog:@"new Central Manager State: CBCentralManagerStateUnsupported"];
+            [self _addToDisplayLog:@"new Central Manager State: CBCentralManagerStateUnsupported"];
             break;
         default:
         case CBCentralManagerStateUnknown:
-            [self addToDisplayLog:@"new Central Manager State: CBCentralManagerStateUnknown"];
+            [self _addToDisplayLog:@"new Central Manager State: CBCentralManagerStateUnknown"];
             break;
     }
 }
@@ -86,14 +86,14 @@
      advertisementData:(NSDictionary *)advertisementData
                   RSSI:(NSNumber *)RSSI
 {
-    [self addToDisplayLog:[NSString stringWithFormat:@"Discovered Peripheral : %@ (RSSI: %@)", peripheral, RSSI]];
+    [self _addToDisplayLog:[NSString stringWithFormat:@"Discovered Peripheral : %@ (RSSI: %@)", peripheral, RSSI]];
 
     if (![self.discoveredPeripherals containsObject:peripheral])
     {
         // Save a local copy of the peripheral, so CoreBluetooth doesn't get rid of it
         [self.discoveredPeripherals addObject:peripheral];
 
-        [self addToDisplayLog:[NSString stringWithFormat:@"Connecting to peripheral %@", peripheral]];
+        [self _addToDisplayLog:[NSString stringWithFormat:@"Connecting to peripheral %@", peripheral]];
         [self.centralManager connectPeripheral:peripheral options:nil];
     }
 }
@@ -102,13 +102,13 @@
 didFailToConnectPeripheral:(CBPeripheral *)peripheral
                      error:(NSError *)error
 {
-    [self addToDisplayLog:[NSString stringWithFormat:@"Failed to connect to peripheral: %@\n%@", peripheral, error]];
-    [self cleanup];
+    [self _addToDisplayLog:[NSString stringWithFormat:@"Failed to connect to peripheral: %@\n%@", peripheral, error]];
+    [self _cleanup];
 }
 
 - (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral
 {
-    [self addToDisplayLog:[NSString stringWithFormat:@"Connected to peripheral: %@", peripheral]];
+    [self _addToDisplayLog:[NSString stringWithFormat:@"Connected to peripheral: %@", peripheral]];
 
     [self _stopScanning];
 
@@ -124,10 +124,10 @@ didDisconnectPeripheral:(CBPeripheral *)peripheral
 {
     if (error)
     {
-        [self addToDisplayLog:[NSString stringWithFormat:@"[--ERROR--]: %s\n%@", __PRETTY_FUNCTION__, error]];
+        [self _addToDisplayLog:[NSString stringWithFormat:@"[--ERROR--]: %s\n%@", __PRETTY_FUNCTION__, error]];
     }
 
-    [self addToDisplayLog:[NSString stringWithFormat:@"Disconnected from Peripheral: %@", peripheral]];
+    [self _addToDisplayLog:[NSString stringWithFormat:@"Disconnected from Peripheral: %@", peripheral]];
 
     [self.discoveredPeripherals removeObject:peripheral];
 
@@ -143,8 +143,8 @@ didDisconnectPeripheral:(CBPeripheral *)peripheral
     {
         for (CBService *service in peripheral.services)
         {
-            [self addToDisplayLog:[NSString stringWithFormat:@"Discovering characteristic on peripheral: %@",
-                                                             peripheral]];
+            [self _addToDisplayLog:[NSString stringWithFormat:@"Discovering characteristic on peripheral: %@",
+                                                              peripheral]];
 
             [peripheral discoverCharacteristics:@[[self _characteristicUUID]]
                                      forService:service];
@@ -152,8 +152,8 @@ didDisconnectPeripheral:(CBPeripheral *)peripheral
     }
     else
     {
-        [self addToDisplayLog:[NSString stringWithFormat:@"[--ERROR--]: %s\n%@", __PRETTY_FUNCTION__, error]];
-        [self cleanup];
+        [self _addToDisplayLog:[NSString stringWithFormat:@"[--ERROR--]: %s\n%@", __PRETTY_FUNCTION__, error]];
+        [self _cleanup];
     }
 }
 
@@ -161,27 +161,27 @@ didDisconnectPeripheral:(CBPeripheral *)peripheral
 didDiscoverCharacteristicsForService:(CBService *)service
                                error:(NSError *)error
 {
-    [self addToDisplayLog:[NSString stringWithFormat:@"Discovered characteristics for service \"%@\" from peripheral \"%@\"",
-                                                     service,
-                                                     peripheral]];
+    [self _addToDisplayLog:[NSString stringWithFormat:@"Discovered characteristics for service \"%@\" from peripheral \"%@\"",
+                                                      service,
+                                                      peripheral]];
     if (!error)
     {
         for (CBCharacteristic *characteristic in service.characteristics)
         {
             if ([characteristic.UUID isEqual:[self _characteristicUUID]])
             {
-                [self addToDisplayLog:[NSString stringWithFormat:@"Requesting notifications from service \"%@\" from characteristic \"%@\" from peripheral \"%@\"",
-                                                                 service,
-                                                                 characteristic,
-                                                                 peripheral]];
+                [self _addToDisplayLog:[NSString stringWithFormat:@"Requesting notifications from service \"%@\" from characteristic \"%@\" from peripheral \"%@\"",
+                                                                  service,
+                                                                  characteristic,
+                                                                  peripheral]];
                 [peripheral setNotifyValue:YES forCharacteristic:characteristic];
             }
         }
     }
     else
     {
-        [self addToDisplayLog:[NSString stringWithFormat:@"[--ERROR--]: %s\n%@", __PRETTY_FUNCTION__, error]];
-        [self cleanup];
+        [self _addToDisplayLog:[NSString stringWithFormat:@"[--ERROR--]: %s\n%@", __PRETTY_FUNCTION__, error]];
+        [self _cleanup];
     }
 }
 
@@ -192,12 +192,12 @@ didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic
     if (!error)
     {
         NSString *stringFromData = [[NSString alloc] initWithData:characteristic.value encoding:NSUTF8StringEncoding];
-        [self addToDisplayLog:[NSString stringWithFormat:@"Received: %@",stringFromData]];
+        [self _addToDisplayLog:[NSString stringWithFormat:@"Received: %@", stringFromData]];
 
         // Have we got everything we need?
         if ([stringFromData isEqualToString:@"EOM"])
         {
-            [self addToDisplayLog:@"Received EOM"];
+            [self _addToDisplayLog:@"Received EOM"];
             [self.communicationTextView setText:[[NSString alloc] initWithData:self.data
                                                                       encoding:NSUTF8StringEncoding]];
             self.data = [NSMutableData new];
@@ -209,7 +209,7 @@ didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic
     }
     else
     {
-        [self addToDisplayLog:[NSString stringWithFormat:@"[--ERROR--]: %s\n%@", __PRETTY_FUNCTION__, error]];
+        [self _addToDisplayLog:[NSString stringWithFormat:@"[--ERROR--]: %s\n%@", __PRETTY_FUNCTION__, error]];
     }
 
 }
@@ -222,18 +222,20 @@ didUpdateNotificationStateForCharacteristic:(CBCharacteristic *)characteristic
     {
         if (characteristic.isNotifying)
         {
-            [self addToDisplayLog:[NSString stringWithFormat:@"Notification began on %@", characteristic]];
+            [self _addToDisplayLog:[NSString stringWithFormat:@"Notification began on %@", characteristic]];
         }
         else
         {
             // Notification has stopped
-            [self addToDisplayLog:[NSString stringWithFormat:@"Notification has stopped from peripheral \"%@\" for characteristic \"%@\"", peripheral, characteristic]];
+            [self _addToDisplayLog:[NSString stringWithFormat:@"Notification has stopped from peripheral \"%@\" for characteristic \"%@\"",
+                                                              peripheral,
+                                                              characteristic]];
             [self.centralManager cancelPeripheralConnection:peripheral];
         }
     }
 }
 
-#pragma mark - Other Methods
+#pragma mark - Other Private Methods
 
 - (void)_startScanning
 {
@@ -241,7 +243,7 @@ didUpdateNotificationStateForCharacteristic:(CBCharacteristic *)characteristic
                                                 options:@{CBCentralManagerScanOptionAllowDuplicatesKey : @YES}];
     self.isCentralManagerScanning = YES;
 
-    [self addToDisplayLog:@"Scanning started"];
+    [self _addToDisplayLog:@"Scanning started"];
 }
 
 - (void)_stopScanning
@@ -249,10 +251,10 @@ didUpdateNotificationStateForCharacteristic:(CBCharacteristic *)characteristic
     [self.centralManager stopScan];
     self.isCentralManagerScanning = NO;
 
-    [self addToDisplayLog:@"Scanning stopped"];
+    [self _addToDisplayLog:@"Scanning stopped"];
 }
 
-- (void)addToDisplayLog:(NSString *)string
+- (void)_addToDisplayLog:(NSString *)string
 {
     NSLog(@"%@",string);
     self.logTextView.text = [self.logTextView.text stringByAppendingString:string];
@@ -269,9 +271,9 @@ didUpdateNotificationStateForCharacteristic:(CBCharacteristic *)characteristic
     return [CBUUID UUIDWithString:TEXT_SERVICE_CHARACTERISTIC_UUID];
 }
 
-- (void)cleanup
+- (void)_cleanup
 {
-    [self addToDisplayLog:@"Cleaning up connected peripherals..."];
+    [self _addToDisplayLog:@"Cleaning up connected peripherals..."];
     // See if we are subscribed to a characteristic on the peripheral
     for (CBPeripheral *cbPeripheral in self.discoveredPeripherals)
     {
@@ -296,7 +298,7 @@ didUpdateNotificationStateForCharacteristic:(CBCharacteristic *)characteristic
         }
         [self.centralManager cancelPeripheralConnection:cbPeripheral];
     }
-    [self addToDisplayLog:@"All peripherals disconnected."];
+    [self _addToDisplayLog:@"All peripherals disconnected."];
 }
 
 @end

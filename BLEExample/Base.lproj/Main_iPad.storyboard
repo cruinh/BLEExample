@@ -7,7 +7,7 @@
         <!--Central Manager View Controller - CBCentralManager-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="CBCentralManagerViewController" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="CBCentralViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="T26-lC-FsW"/>
                         <viewControllerLayoutGuide type="bottom" id="nYy-Zq-1Gx"/>
@@ -108,7 +108,7 @@
         <!--Peripheral Manager View Controller - CBPeripheralManager-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="CBPeripheralManagerViewController" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="CBPeripheralViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="m3i-4F-tsy"/>
                         <viewControllerLayoutGuide type="bottom" id="j0i-7I-OC6"/>
