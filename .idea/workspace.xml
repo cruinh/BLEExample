@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5edc42c-a416-472b-9950-dd0e5bdf1e07" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BLEExample/CBCentralViewController.m" afterPath="$PROJECT_DIR$/BLEExample/CBCentralViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BLEExample/CBCentralViewModel.m" afterPath="$PROJECT_DIR$/BLEExample/CBCentralViewModel.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BLEExample/CBPeripheralViewController.m" afterPath="$PROJECT_DIR$/BLEExample/CBPeripheralViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BLEExample/CBPeripheralViewModel.m" afterPath="$PROJECT_DIR$/BLEExample/CBPeripheralViewModel.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BLEExample.iws" />
@@ -23,19 +20,75 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_8b6981fa37af8ec8af4de5b3c639d5e86f21dc44" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_222561770979d1b84d1bd86fce08f9bc9595bce2" />
   <component name="FavoritesManager">
     <favorites_list name="BLEExample" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CBCentralViewController.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BLEExample/CBCentralViewController.m">
+      <file leaf-file-name="CBPeripheralViewController.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BLEExample/CBPeripheralViewController.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="20" selection-start="956" selection-end="977" vertical-scroll-proportion="0.0" vertical-offset="433" max-vertical-offset="1335">
+            <state line="11" column="11" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
               <folding>
-                <element signature="e#147#182#0" expanded="true" />
+                <element signature="e#150#189#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CBPeripheralViewController.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BLEExample/CBPeripheralViewController.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="85" column="1" selection-start="2214" selection-end="2214" vertical-scroll-proportion="0.7006652" vertical-offset="643" max-vertical-offset="1545">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TabBarController.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BLEExample/TabBarController.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TabBarController.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BLEExample/TabBarController.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BLEExample-Prefix.pch" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BLEExample/BLEExample-Prefix.pch">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="6" selection-start="343" selection-end="491" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+              <folding>
+                <element signature="e#275#298#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CBPeripheralViewModel.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BLEExample/CBPeripheralViewModel.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="39" selection-start="137" selection-end="739" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CBPeripheralViewModel.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BLEExample/CBPeripheralViewModel.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="247" column="1" selection-start="131" selection-end="8922" vertical-scroll-proportion="0.0" vertical-offset="2923" max-vertical-offset="3825">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,19 +102,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CBPeripheralViewModel.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BLEExample/CBPeripheralViewModel.m">
+      <file leaf-file-name="CBCentralViewController.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BLEExample/CBCentralViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="14" selection-start="3858" selection-end="3858" vertical-scroll-proportion="0.0" vertical-offset="1181" max-vertical-offset="3825">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CBPeripheralViewController.m" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BLEExample/CBPeripheralViewController.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="0" selection-start="2335" selection-end="2335" vertical-scroll-proportion="1.0071225" vertical-offset="643" max-vertical-offset="1545">
+            <state line="49" column="20" selection-start="956" selection-end="977" vertical-scroll-proportion="0.0" vertical-offset="433" max-vertical-offset="1335">
               <folding />
             </state>
           </provider>
@@ -106,7 +150,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1680" />
+    <option name="width" value="1920" />
     <option name="height" value="1024" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -157,7 +201,39 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Frameworks" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BLEExample" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="BLEExampleTests" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BLEExample" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BLEExampleTests" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Supporting Files" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -175,6 +251,24 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BLEExample" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BLEExample" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Supporting Files" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Cidr.FilesView" />
@@ -182,13 +276,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="editor" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="editor" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="BLEExample" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Application.BLEExample">
     <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PROJECT_NAME="BLEExample" TARGET_NAME="BLEExample" CONFIG_NAME="Debug" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="BLEExample" RUN_TARGET_NAME="BLEExample" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
@@ -240,16 +334,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="1024" extended-state="6" />
+    <frame x="0" y="22" width="1920" height="1024" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47096774" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24984913" sideWeight="0.7392704" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1949306" sideWeight="0.78494626" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21505377" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17026885" sideWeight="0.78494626" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21505377" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -257,6 +349,8 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47096774" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -276,48 +370,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BLEExample/AppDelegate.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="1" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BLEExample/TabBarController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="661">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BLEExample/TabBarController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="661">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BLEExampleTests/BLEExampleTests.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="1" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BLEExample/CBPeripheralViewModel.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="39" selection-start="137" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BLEExample/CBPeripheralViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="33" selection-start="223" selection-end="223" vertical-scroll-proportion="0.204236" vertical-offset="0" max-vertical-offset="661">
-          <folding>
-            <element signature="e#150#189#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="22" column="1" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BLEExample/CBCentralViewController.h">
@@ -336,9 +391,7 @@
     </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers/CBCentralManager.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="6" selection-start="2581" selection-end="2581" vertical-scroll-proportion="0.33221477" vertical-offset="882" max-vertical-offset="5055">
-          <folding />
-        </state>
+        <state line="75" column="6" selection-start="2581" selection-end="2581" vertical-scroll-proportion="0.33221477" vertical-offset="882" max-vertical-offset="5055" />
       </provider>
     </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/include/dispatch/queue.h">
@@ -350,24 +403,32 @@
     </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers/CBPeripheralManager.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="269" column="8" selection-start="12898" selection-end="12898" vertical-scroll-proportion="0.79588336" vertical-offset="3526" max-vertical-offset="6225">
-          <folding />
-        </state>
+        <state line="269" column="8" selection-start="12898" selection-end="12898" vertical-scroll-proportion="0.79588336" vertical-offset="3526" max-vertical-offset="6225" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BLEExample/main.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
+        <state line="15" column="0" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BLEExample/CBCentralViewController.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="20" selection-start="956" selection-end="977" vertical-scroll-proportion="0.0" vertical-offset="433" max-vertical-offset="1335">
-          <folding>
-            <element signature="e#147#182#0" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BLEExample/TabBarController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="661">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BLEExample/TabBarController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="661">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -378,16 +439,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BLEExample/CBPeripheralViewModel.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="39" selection-start="137" selection-end="739" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BLEExample/BLEExample-Prefix.pch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="6" selection-start="343" selection-end="491" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <folding>
+            <element signature="e#275#298#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BLEExample/CBPeripheralViewModel.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="14" selection-start="3858" selection-end="3858" vertical-scroll-proportion="0.0" vertical-offset="1181" max-vertical-offset="3825">
+        <state line="247" column="1" selection-start="131" selection-end="8922" vertical-scroll-proportion="0.0" vertical-offset="2923" max-vertical-offset="3825">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BLEExample/CBPeripheralViewController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="11" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <folding>
+            <element signature="e#150#189#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BLEExample/CBPeripheralViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="0" selection-start="2335" selection-end="2335" vertical-scroll-proportion="1.0071225" vertical-offset="643" max-vertical-offset="1545">
+        <state line="85" column="1" selection-start="2214" selection-end="2214" vertical-scroll-proportion="0.7006652" vertical-offset="643" max-vertical-offset="1545">
           <folding />
         </state>
       </provider>

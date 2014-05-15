@@ -84,7 +84,7 @@
 
 - (NSData*)viewModelWantsCurrentDataToSend
 {
-    return [self.logTextView.text dataUsingEncoding:NSUTF8StringEncoding];
+    return [self.communicationTextView.text dataUsingEncoding:NSUTF8StringEncoding];
 }
 
 #pragma mark - UITextViewDelegate methods
